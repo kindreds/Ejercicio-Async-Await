@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --primary-border: rgba(38, 143, 255, 0.5);
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'PT Sans', sans-serif; */
+}
+
+body {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.container {
+    padding:20px;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.botonera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    border: 0.0625rem solid transparent;
+    outline: 0;
+    margin-top: 20px;
+}
+
+.primario {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.primario:focus {
+    box-shadow: 0 0 0 0.2rem var(--primary-border);
+}
+
+.segundario {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.segundario:focus {
+    box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+
+h1,h2,h3 {
+    font-family: 'PT sans', sans-serif;
+    color: white;
+}
+
+li {
+    font-family: 'poppins' , sans-serif;
+    background-color: #8d99ae;
+    margin-bottom: 0.125rem;
+    padding: 0.625rem;
+    list-style: none;
+    color: white;
+}
+.lista {
+    margin-top: 20px;
+}
+
+.apiContainer img {
+    width: 100%;
+}
+
+.apiContainer button {
+    width: 100%;
+}
+
+.cajaIMG {
+    max-height: 350px;
+}
+
+
+
+
