@@ -17,7 +17,7 @@ const txt = async ()=> {
 } 
 
 const json = async ()=> {
-    const solicitud = await fetch('./assets/datos.txt'')
+    const solicitud = await fetch('./assets/datos.txt')
                                 .then(resp=>resp.json())
     let html = '<h1>Lista Json</h1>';
     solicitud.forEach( empleado=> {
