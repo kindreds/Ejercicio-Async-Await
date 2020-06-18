@@ -5,7 +5,7 @@ const txtBtn  = document.querySelector('#txt'),
 
 // Funciones 
 const txt = async ()=> {
-    const solicitud = await fetch('./datos.txt')
+    const solicitud = await fetch('./assets/datos.txt')
                                 .then( resp=> resp.text() )
                                 .then( data=> data.split(/\,/))
     let html = '<h1>Lista .txt</h1>';
@@ -17,7 +17,7 @@ const txt = async ()=> {
 } 
 
 const json = async ()=> {
-    const solicitud = await fetch('./empleados.json')
+    const solicitud = await fetch('./assets/datos.txt'')
                                 .then(resp=>resp.json())
     let html = '<h1>Lista Json</h1>';
     solicitud.forEach( empleado=> {
