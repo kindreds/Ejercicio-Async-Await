@@ -7,23 +7,23 @@ const txtBtn  = document.querySelector('#txt'),
 const txt = async ()=> {
     const solicitud = await fetch('./assets/datos.txt')
                                 .then( resp=> resp.text() )
-                                .then( data=> data.split(/\,/))
+                                .then( data=> data.split(/\,/));
     let html = '<h1>Lista .txt</h1>';
     solicitud.forEach( nombre=> {
         html += `<li>${nombre}</li>`
-    })
+    });
     resultado.innerHTML = html;
 
 } 
 
 const json = async ()=> {
     const solicitud = await fetch('./assets/empleados.json')
-                                .then(resp=>resp.json())
+                                .then(resp=>resp.json());
     let html = '<h1>Lista Json</h1>';
     solicitud.forEach( empleado=> {
         html += `
         <li>${empleado.nombre}</li>`;
-    })
+    });
     resultado.innerHTML = html;
 }
 let id =  0
@@ -31,7 +31,7 @@ let id =  0
 const api = async ()=> {
 
     const url = `https://picsum.photos/id/${id}/info`;
-    const {author, download_url} = await fetch( url ).then( resp=> resp.json() )
+    const {author, download_url} = await fetch( url ).then( resp=> resp.json() );
     
     let html = `
     <div class="apiContainer">
@@ -41,16 +41,16 @@ const api = async ()=> {
         </div>
         <h3 class="card-title">Autor: ${author}</h3>
         <button onclick="next()" class="btn segundario">Siguiente</button>
-    </div>`
+    </div>`;
     resultado.innerHTML = html;
 }
 
 const next = ()=> {
-    id+=10
+    id+=10;
     api();
-}
+};
 
 // Eventos
-txtBtn.addEventListener('click', txt)
-jsonBtn.addEventListener('click', json)
-apiBtn.addEventListener('click', api)
+txtBtn.addEventListener('click', txt);
+jsonBtn.addEventListener('click', json);
+apiBtn.addEventListener('click', api);
