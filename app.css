@@ -37,12 +37,12 @@ body {
 
 .primario {
     color: #fff;
-    background-color: var(--primary);
-    border-color: var(--primary);
+    background-color: #457b9d ;
+    border-color: #457b9d;
 }
 
 .primario:focus {
-    box-shadow: 0 0 0 0.2rem var(--primary-border);
+    box-shadow: 0 0 0 0.2rem #1d3557;
 }
 
 .segundario {
